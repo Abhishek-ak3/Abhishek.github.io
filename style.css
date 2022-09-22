@@ -1,0 +1,234 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg');
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+
+.cont {
+    display: grid;
+    grid-template-areas:
+        'image name name name'
+        'intro intro intro intro'
+        'hobb hobb hobb hobb'
+        'visit visit visit visit'
+        'Yt Yt Yt Yt'
+        'foot foot foot foot';
+}
+
+.image {
+    background-color: brown;
+    grid-area: image;
+    padding: 15px;
+
+}
+
+.name {
+    grid-area: name;
+    padding: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    background-color: orange;
+    grid-area: intro;
+    padding: 15px;
+}
+
+.hobb {
+    background-color: darkcyan;
+    grid-area: hobb;
+    margin-top: 15px;
+    padding: 15px;
+    display: grid;
+    grid-gap: 1.2rem;
+    grid-template-areas:
+        'abt abt abt'
+        'arg arg2 arg3'
+        'arg arg2 arg3';
+
+}
+
+.Yt iframe {
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.Visit {
+    /* background-color: darkcyan; */
+    grid-area: visit;
+    padding: 15px;
+    display: grid;
+    grid-template-areas:
+        'hod hod hod'
+        'item1 item2 item3'
+        'item1 item2 item3';
+}
+
+.item1 {
+    grid-area: item1;
+    background-color: antiquewhite;
+    margin: 10px;
+    height: 80%;
+    border-radius: 15px;
+
+}
+
+.item2 {
+    background-color: greenyellow;
+    border-radius: 15px;
+    grid-area: item2;
+    margin: 10px;
+}
+
+.item3 {
+    border-radius: 15px;
+    background-color: pink;
+    grid-area: item3;
+    height: 80%;
+    margin: 10px;
+}
+
+.Yt {
+    background-color: seagreen;
+    grid-area: Yt;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.learnt {
+    background-color: seagreen;
+    grid-area: learnt;
+    padding: 15px;
+}
+
+footer {
+    background-color: black;
+    padding: 15px;
+    grid-area: foot;
+    color: white;
+    text-align: center;
+}
+
+.wht {
+    color: white;
+}
+
+.arg {
+    background-color: slateblue;
+    grid-area: arg;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.arg2 {
+    background-color: rgb(192, 189, 143);
+    font-size: 20px;
+    grid-area: arg2;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.hd {
+    color: yellow;
+}
+
+.arg3 {
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: sienna;
+    grid-area: arg3;
+    padding: 5px;
+}
+
+.intro h2 {
+    text-shadow: 10px;
+}
+
+.Visit img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.Visit h5 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.hod {
+    grid-area: hod;
+    font-size: 25px;
+    color: blue;
+    text-align: center;
+    color: white;
+}
+
+.abt {
+    grid-area: abt;
+    font-size: 30px;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+@media only screen and (max-width:500px) {
+    .cont {
+
+        grid-template-areas:
+            'image image image image'
+            'name name name name'
+            'intro intro intro intro'
+            'hobb hobb hobb hobb'
+            'visit visit visit visit'
+            'Yt Yt Yt Yt'
+            'foot foot foot foot';
+    }
+
+    .image img {
+        display: block;
+        width: 20%;
+        margin: auto;
+        border-radius: 110px;
+    }
+
+    .hobb {
+        grid-template-areas:
+            'abt abt '
+            'arg arg '
+            'arg2 arg2'
+            'arg3 arg3';
+
+    }
+
+    .Visit {
+        grid-template-areas:
+            'hod hod'
+            'item1 item1'
+            'item2 item2'
+            'item3 item3';
+    }
+
+    .item1,
+    .item2,
+    .item3 {
+        height: 95%;
+        margin: 10px;
+    }
+    .Yt {
+       display: flex;
+        flex-direction: column;
+    }
+
+}
